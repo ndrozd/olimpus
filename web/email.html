@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>[Nikita Drozd] Encrypto</title>
+<style>
+/* -------------------------------------
+    GLOBAL
+------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Myriad Pro', "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  width: 100%!important;
+  height: 100%;
+}
+
+
+/* -------------------------------------
+    ELEMENTS
+------------------------------------- */
+a {
+  color: #348eda;
+}
+
+.btn-primary {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #348eda;
+  border: solid #348eda;
+  border-width: 10px 20px;
+  line-height: 2;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.btn-secondary {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #aaa;
+  border: solid #aaa;
+  border-width: 10px 20px;
+  line-height: 2;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+.first {
+  margin-top: 0;
+}
+
+.padding {
+  padding: 10px 0;
+}
+
+
+/* -------------------------------------
+    BODY
+------------------------------------- */
+table.body-wrap {
+  width: 100%;
+  padding: 20px;
+}
+
+table.body-wrap .container {
+  border: 1px solid #f0f0f0;
+}
+
+
+/* -------------------------------------
+    FOOTER
+------------------------------------- */
+table.footer-wrap {
+  width: 100%;  
+  clear: both!important;
+}
+
+.footer-wrap .container p {
+  font-size: 12px;
+  color: #666;
+  
+}
+
+table.footer-wrap a {
+  color: #999;
+}
+
+
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+h1, h2, h3 {
+  font-family: 'Myriad Pro', "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+  margin: 40px 0 10px;
+  line-height: 1.2;
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 22px;
+}
+
+p, ul, ol {
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+ul li, ol li {
+  margin-left: 5px;
+  list-style-position: inside;
+}
+
+/* ---------------------------------------------------
+    RESPONSIVENESS
+    Nuke it from orbit. It's the only way to be sure.
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  display: block!important;
+  max-width: 800px!important;
+  margin: 0 auto!important; /* makes it centered */
+  clear: both!important;
+}
+
+/* Set the padding on the td rather than the div for Outlook compatibility */
+.body-wrap .container {
+  /*padding: 20px;*/
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table {
+  width: 100%;
+}
+
+.animated {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated_infinite {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1.1) ;
+    transform: scale(1.1) ;
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale(0.9) ;
+    transform: scale(0.9) ;
+  }
+
+  100% {
+    -webkit-transform: scale(1) ;
+    transform: scale(1) ;
+  }
+}
+
+@keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+ 
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+</style>
+</head>
+
+<body bgcolor="#f6f6f6">
+
+<!-- body -->
+<table class="body-wrap" bgcolor="#f6f6f6">
+  <tr>
+    <td></td>
+    <td class="container" bgcolor="#FFFFFF">
+
+      <!-- content -->
+      <div class="content">
+      <table style="border-collapse:collapse;">
+        <tr>
+          <td style="width:50%; padding: 30px 10px 30px 35px;"><img src="http://zemel.info/macpaw/images/macpaw-logo.png" alt="MacPaw" title="MacPaw"/></td>
+          <td style="width:50%; text-align:right; padding: 37px 35px 30px 0;"><a href="http://zemel.info/macpaw/email" style="font-family: 'Myriad Pro'; color:  #7b7979; font-size: 18px; border-bottom:none; text-decoration: none; vertical-align:middle; font-weight: 600; text-align: left; display:inline-block">Open in browser</a></td>
+        </tr>
+        <tr style="background:#BEC3C8;">
+          <td colspan="2" style="height: 300px; background: url(http://zemel.info/macpaw/images/email-back.png) center top no-repeat; background-size: cover; vertical-align:top; color: white; font-size: 36px; text-align: center;"><h1 style="color: white; font-size: 36px;">Quality apps to make your life better</h1><p style="font-size: 24px; margin-top: 150px;">Not to mention, they’re all free.</p></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p style=" font-size: 20px; font-weight: 400; text-align: center; padding: 45px 30px 0;">Here at MacPaw we have something you might love — namely the apps that are incredibly useful and completely free. Meet Encrypto, CleanMyDrive and Listen. Designed with our usual passion for details, fast and intuitive, ready to improve your every day.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center; padding: 40px 0 10px;">
+            <img src="http://zemel.info/macpaw/images/email1.png" alt="app1" title="MacPaw app1"/>
+            <img src="http://zemel.info/macpaw/images/email2.png" alt="app2" title="MacPaw app2"style="margin: 0 40px;" />
+            <img src="http://zemel.info/macpaw/images/email3.png" alt="app3" title="MacPaw app3" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center; padding: 10px 0;">
+            <div style="background-color:  #cccccc; margin: 0 auto; width: 90%; height: 1px;"></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center; padding: 40px 0;">
+            <img src="http://zemel.info/macpaw/images/email-mac.png" title="MacPaw app opened" alt="macbook" />
+            <br />
+            <br />
+            <a class="tada animated_infinite" style="border-radius: 10px; background-color: #39b54a; width: 207px; height: 44px; display: inline-block; color: white; text-decoration: none; line-height: 46px; font-size: 18px;" href="#">Download Encrypto</a>
+
+          </td>
+        </tr>
+      </table>
+      </div>
+      <!-- /content -->
+      
+    </td>
+    <td></td>
+  </tr>
+</table>
+<!-- /body -->
+
+<!-- footer -->
+<table class="footer-wrap">
+  <tr>
+    <td></td>
+    <td class="container">
+      
+      <!-- content -->
+      <div class="content">
+        <table>
+          <tr>
+            <td align="center">
+              <p>Don't like these annoying emails? <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- /content -->
+      
+    </td>
+    <td></td>
+  </tr>
+</table>
+<!-- /footer -->
+
+</body>
+</html>

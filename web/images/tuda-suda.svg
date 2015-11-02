@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="74px" height="80px" viewBox="0 0 74 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 292</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-1">
+            <stop stop-color="#5AD0F2" offset="0%"></stop>
+            <stop stop-color="#2592D5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="1" sketch:type="MSArtboardGroup" transform="translate(-341.000000, -2622.000000)" fill="url(#linearGradient-1)">
+            <g id="4" sketch:type="MSLayerGroup" transform="translate(0.000000, 2215.000000)">
+                <g id="1" transform="translate(250.000000, 407.000000)" sketch:type="MSShapeGroup">
+                    <path d="M126,21 L126,26.5 L116,18.5 L126,10.5 L126,16 L140,16 L140,21 L126,21 Z M130,64 L130,69.5 L140,61.5 L130,53.5 L130,59 L116,59 L116,64 L130,64 Z M91,3.99458325 C91,1.78843584 92.7925573,0 95.0047992,0 L160.995201,0 C163.20699,0 165,1.78307965 165,3.99458325 L165,76.0054168 C165,78.2115642 163.207443,80 160.995201,80 L95.0047992,80 C92.7930097,80 91,78.2169203 91,76.0054168 L91,3.99458325 Z M91,37 L165,37 L165,43 L91,43 L91,37 Z" id="Rectangle-292"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
