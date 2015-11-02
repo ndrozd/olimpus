@@ -16,7 +16,7 @@ $(document).ready(function($) {
 	});
 });
 $(window).load(function() {
-	$(".nd-main-bg, .nd-main-bg__text").addClass('active');
+	$(".nd-main-bg, .nd-hero-cont").addClass('active');
 	$(window).scroll(function () {
 	   $('.js-animation:not(.active)').each(function () {
 	      if (isScrolledIntoView(this) === true) {
@@ -35,4 +35,9 @@ function isScrolledIntoView(elem) {
     var elemBottom = elemTop + $(elem).height();
 
     return ((elemBottom - (0.6*$(elem).height()) <= docViewBottom));
+}
+
+if (document.images) {
+	img1 = new Image();
+	img1.src = "images/graph-up.png";
 }
