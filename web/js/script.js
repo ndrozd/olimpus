@@ -1,8 +1,18 @@
 $(document).ready(function($) {
 	$(".step1 .answ-btn").click(function(event) {
-		$(".step1").fadeOut('300', function() {
-			$(".step2").fadeIn(300).addClass('animated bounceIn');
-		});
+		if ($(this).hasClass('positive')) {
+			$(".nd-frame .graph").addClass('positive');
+		}
+		else {
+			$(".nd-frame .graph").removeClass('positive');
+		}
+		$(".nd-frame .graph").addClass('active');
+		$(" .nd-frame .line").fadeIn(300);
+		$(".step1, .nd-dialog .wrapper").fadeOut('300');
+		setTimeout(function(){
+			$(".step2, .nd-dialog .wrapper").fadeIn(300);
+			$(".step2").addClass('animated bounceIn');
+		}, 4000)
 	});
 });
 $(window).load(function() {

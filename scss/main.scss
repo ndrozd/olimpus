@@ -122,11 +122,39 @@ body {
   margin-bottom: -63px;
   overflow: hidden;
   position: relative;
-
+  .grid {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../images/grid.png);
+    background-size:100%;
+  }
+  .line {
+    width: 560px;
+    left: 0;
+    position: absolute;
+    display: none;
+    top: 165px;
+    height: 2px;
+    background-image: linear-gradient(90deg, #E6A227 84%, rgba(230,161,39,0.00) 100%); 
+  }
   .graph {
-    width: 100%;
-    height: 100%;
-    background: url(../images/frame-graph.png);
+    width: 500px;
+    height: 80%;
+    bottom: 0;
+    position: absolute;
+    background: url(../images/graph-down.png);
+    background-size: cover;
+    background-position-x: 0%; 
+    transition: background-position-x 4s linear;
+    &.positive {
+      background-image: url(../images/graph-up.png);
+    }
+    &.active {
+      background-position-x: 80%;
+    }
   }
   .aside {
     position: absolute;
@@ -353,7 +381,21 @@ body {
     line-height: 15px;
   }
 }
-
+.bg {
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+  &1 {
+    background-image: url(../images/bg1.png)
+  }
+  &2 {
+    background-position: 70% top;
+    background-image: url(../images/bg2.png)
+  }
+  &3 {
+     background-position: 60% %;
+    background-image: url(../images/bg3.png)
+  }
+}
 // animations 
 .an-reveal-opacity {
   opacity: 0;
@@ -394,6 +436,7 @@ body {
 }
 .graph-bottom  {
   height: 401px;
+  margin-top: -65px;
   background: url(../images/graph-bottom.svg);
   background-size: cover;
   position: relative;
@@ -401,6 +444,12 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
+  }
+}
+.wrapper {
+  opacity: 0;
+  &.active {
+    opacity: 1;
   }
 }
 .nd-footer {
